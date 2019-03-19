@@ -19,40 +19,37 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Fp-dv-9IP">
-                                <rect key="frame" x="22" y="224" width="57" height="41"/>
+                                <rect key="frame" x="141" y="218" width="94" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <state key="normal" title="press"/>
+                                <state key="normal" title="press me"/>
                                 <connections>
                                     <action selector="Buttonpress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KKV-Cf-ALU"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dYe-CW-qRa">
-                                <rect key="frame" x="80" y="122" width="215" height="30"/>
+                                <rect key="frame" x="80" y="111" width="215" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Df2-Yb-GMn">
-                                <rect key="frame" x="305" y="224" width="51" height="41"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uFQ-YZ-i5h">
+                                <rect key="frame" x="163" y="302" width="59" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <state key="normal" title="clear"/>
                                 <connections>
-                                    <action selector="Buttonpress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vU9-iZ-ze7"/>
-                                    <action selector="buttonclear:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eWc-NN-Tyv"/>
+                                    <action selector="button2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ych-kk-nlU"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Suf-Sa-xZ1">
-                                <rect key="frame" x="120" y="224" width="135" height="41"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ohw-3E-ff7">
+                                <rect key="frame" x="121" y="394" width="135" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <state key="normal" title="change color"/>
                                 <connections>
-                                    <action selector="Buttonpress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lJK-0k-2QD"/>
-                                    <action selector="buttonclear:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NVQ-0u-4gb"/>
-                                    <action selector="buttoncolor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8xW-ME-Yw2"/>
+                                    <action selector="changeViewColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JoF-7i-0e2"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -61,6 +58,7 @@
                     </view>
                     <connections>
                         <outlet property="label" destination="dYe-CW-qRa" id="ex8-4P-V4A"/>
+                        <outlet property="mybutton" destination="1Fp-dv-9IP" id="4HF-qo-Lg8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
